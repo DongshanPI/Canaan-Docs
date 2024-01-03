@@ -62,7 +62,7 @@
 
 打开终端后，在终端输入`pip show nncase`，查看是否存在nncase包。
 
-```
+```bash
 pip show nncase
 ```
 
@@ -70,7 +70,7 @@ pip show nncase
 
 输入`pip show nncase`，查看是否存在nncase-k510包
 
-```
+```bash
 pip show nncase
 ```
 
@@ -80,13 +80,13 @@ pip show nncase
 
 ​	虚拟机中内置有[模型转换程序](https://dongshanpi.cowtransfer.com/s/b70eced85b0d46)，这里我们使用该程序测试Ubuntu的环境是否配置完成。该程序位于`/home/ubuntu/yolov5s-modelTransformation`目录下。在终端中输入以下命令进入该目录：
 
-```
+```bash
 cd /home/ubuntu/yolov5s-modelTransformation
 ```
 
 查看该目录下的文件
 
-```
+```bash
 buntu@ubuntu2004:~/yolov5s-modelTransformation$ ls
 gen_yolov5s_320_with_sigmoid_bf16_with_preprocess_output_nhwc.py
 requirements.txt
@@ -105,7 +105,7 @@ yolov5s-sim.onnx
 
 在终端输入以下命令，将onnx格式的模型转换为kmodel格式的模型文件
 
-```
+```bash
 python gen_yolov5s_320_with_sigmoid_bf16_with_preprocess_output_nhwc.py --target k510   --dump_dir ./tmp --onnx ./yolov5s-sim.onnx --kmodel ./yolov5s-sim.kmodel
 ```
 
@@ -113,7 +113,7 @@ python gen_yolov5s_320_with_sigmoid_bf16_with_preprocess_output_nhwc.py --target
 
 转换成功后会生成对应的kmodel文件，查看kmodel的修改时间。
 
-```
+```bash
 ubuntu@ubuntu2004:~/yolov5s-modelTransformation$ ll yolov5s-sim.kmodel 
 -rw-rw-r-- 1 ubuntu ubuntu 14602936 Aug  1 02:13 yolov5s-sim.kmodel
 ```
