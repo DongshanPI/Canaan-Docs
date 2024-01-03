@@ -46,7 +46,7 @@
 
 ![image-20230801105332891](http://photos.100ask.net/canaan-docs/image-20230801105332891.png)
 
-此时等待虚拟机运行即可，运行成功后进入登入界面。点击`Ubuntu`账户，输入密码为`Ubuntu`
+此时等待虚拟机运行即可，运行成功后进入登入界面。点击`Ubuntu`账户，输入密码为`ubuntu`
 
 ![image-20230801105546859](http://photos.100ask.net/canaan-docs/image-20230801105546859.png)
 
@@ -87,7 +87,7 @@ cd /home/ubuntu/yolov5s-modelTransformation
 查看该目录下的文件
 
 ```
-buntu@ubuntu2004:~/yolov5s-modelTransformation$ ls
+ubuntu@ubuntu2004:~/yolov5s-modelTransformation$ ls
 gen_yolov5s_320_with_sigmoid_bf16_with_preprocess_output_nhwc.py
 requirements.txt
 yolov5s-sim.kmodel
